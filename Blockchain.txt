@@ -1,0 +1,264 @@
+Blockchain
+==============
+Encryption: new ways of applying encryption enhance security
+Mutual Consensus: verification of transaction across distributed networks, avoids hacking and double spending
+Decentralization: removes third party intermediaries needed to provide consensus or transaction processing, lower markup and greater profit
+Smart Contracts: code instead of data in ledger allows for specialized intructions, that can trigger attached code to perform meaningful functions
+Data Efficiency: Blockchain propogration maintains integrity and universality
+Expediency: Near real-time updating of ledger vs traditional paradigm
+
+Problems:
+============
+Technology needs work
+No standardization
+Not scalable enough
+Needs further development
+Confusion over what can be done with Blockchain
+Infrastructure & adoption costs may be seen as prohibitive: Most banks have massive infrastructure debt in financial processing systems. These systems could be 15, 20 years old. But they power transactions between the world’s major businesses and governments; disrupting them, even for a short time, could be disastrous. Trying to overhaul them altogether is a tall order, and comes with huge risk. I doubt that many people within banks want to take responsibility for that, especially when it’s entirely outside the existing business model.
+
+Hurdles:
+================
+Its new - hesitation
+Investor and consumer behavious is volatile - in the face of changing technology, they dont like to go all-in
+Banks like to charge fees: Banks today make huge profits on financial transactions. If transfers suddenly became instantaneous and worry-free, who would pay a bank to facilitate them? Banks want to exert control, rather than drive meaningful reforms.
+Financial services organizations face many challenges - Not a priority, dont traditionally drive innovation: Banks already have a huge technology headache: keeping pace with the web of global regulations. This is an immensely challenging, high stakes and constantly shifting landscape; it will always be first priority for banks and their technology departments. When so much energy and budget go to keeping regulators off your back, it’s hard to justify diverting resources to a completely unrelated issue. Banks are not wired to drive this kind of innovation. Quite simply: bureaucracy. Lawyers, compliance, front office, back office, middle office — enacting meaningful reform, or even getting budget to expand a technology program, could require sign-off from all of them. 
+Requires collaboration - industries not accustomed to working together
+Lack of effective regulatory environment
+Legislative and legal landscape needs to evolve
+There are still unknown applications for BC
+Bitcoins, Smart Contracts etc are just tips of the iceberg
+
+Future of Blockchain:
+======================
+Usecases are nascent: Smart contracts, Data Storage
+Real opportunity needs champions
+Focus on data
+
+Targeted Uses:
+==============
+Regulatory Compliance
+Records management
+Assets management
+Identity management
+Big Data
+Auditing
+Transparency
+Accounting
+Internet of Things (IoT)
+Know Your Customers (KYC)
+Money Laundering Prevention
+P2P transactions
+Supply Chain Management
+Voting
+Taxes
+
+Targeted Industries:
+=====================
+Banking and Financial
+Capital Markets
+Government
+NGO
+Energy
+Healthcare
+Manufacturing
+Insurance
+Real Estate
+Media
+
+Existing Use Cases:
+===================
+Currency Exchange
+Cryptocurrencies
+Land Registration
+Ride-sharing
+Medical Records
+App Development
+Data Content
+Secure Messaging
+Home Automation
+Marketplaces
+Car Leasing
+
+Ledger:
+==========
+Electronic Collection of files of transactions
+Final Entry - two way - Payments in (credits) and payments out (debits)
+Entries are categorised as Assets, Equity, Expense, Income etc
+The Blockchain Ledger is distributed - public information and every one has a copy
+BC Ledger is a chain of hashes
+
+Example BitCoin transaction flow:
+====================================
+A Transaction is created - a BitCoin wallet purchases BTC using a Private Key
+The transaction is broadcasted to the network
+Transactions are not encrypted at this point because the BC Ledger needs to see transactions
+Every client has to record and establish the ownership of the transaction
+The transaction is validated
+Finally the transaction is added to a block in the BC Ledger
+
+Blockchain - Double Entry + 1 (ie Triple Entry):
+===============================================
+Similar to double entry - transaction between two parties - Buyer and Seller
+Transactions have a signature (the 3rd party) - Validates the transaction, uses cryptography
+In BitCoin the 3rd party is the BitCoin Client
+Triple Entry = Credit, Debit, Receipt
+
+Ledgers:
+=========
+Local vs Distributed
+Centralized vs Decentralized
+
+
+How Encryption Works:
+=======================
+Requires a password.
+Key != Password always, although it can be
+
+Two most common methods:
+Public Key - Asymmetric - Uses two different keys -> Private (secret) and Public Keys. Keys are generated by the same algorithm with Private Key generating the digital signature and Public Key validating the Digital Signature; Data Encrypted by Public Key and only decrypted by Private Key and hence Private Key must be secured. Authentication performed through hash function
+Private Key - Symmetric - Same encryption and decryption key. Both sides must have the same key. Since key needs to be shared, it is a weakness
+
+Hash Functions:
+===============
+Fingerprint of digital data
+Maps data from any size to a specific size
+Hash always give the same result for a given encryption
+Hash vs Cipher Text
+Impossible to parse or reverse
+Commonly used as a checksum, but its not a checksum
+Practical purpose is in verifying data integrity (downloading a file, even minor changes to a file will change the hash value)
+Easy to produce
+
+MD5 hashes - 128 bit encryption
+SHA-1 hashes - 160 bit encryption
+
+Digital Signatures:
+===================
+Provides Authentication, for ex a Document or BitCoin transaction
+Verifies the user
+Irrefutable - they cannot be challenged for their integrity
+Ensures that data hasnt changed during transmission
+Data generated (sender/seller) using a Private Key
+Signature Verified (receiver) using a Public Key
+
+Digital Cerificates:
+=====================
+Public Key Certificate
+Document that verifies public key thereby establishing ownership and trust
+Contains - Identity, Key Information and Digital Signature
+Certificate Authority (CA) often an organization that issues secure certificates on behalf of another organization
+Use Public Key Infrastructure (PKI) (Eg: Expiry Date etc)
+Signer can be - Owner of the Key or Trusted Agents
+If Signer is a Key Holder, then the certificate is Self Signed
+Used to create secure transactions between a Sender and a Receiver, used in Web Sites, Data Transfer, Secure Transactions, Secure Network Connections, VPN/Remote Desktop, Messaging, BC
+Use SSL/TLS
+
+
+
+
+
+Blockchain is a peer to peer distributed ledger, forged by consensus, combined with a system for 'Smart Contracts' and other assistive technologies. Together these can be used to build a new generation of transactional applications that establishes trust, accountability and transparency at their core, while streamlining business processes and legal constraints.
+
+Miners = Special Nodes that can host the ledgers
+Business Logic = Smart Contracts
+Digital Signature = Passwords?
+A completely different Digital Signature is required for every transaction
+Private Key to create a signtature, Public Key for others to verify
+Private Key == True Password, Signature == Intermediary that proves you have the password without requiring that you reveal it
+Public Key == Send to Address, when you send money, you are actually sending it to their public key
+Ethereum and Ripple have their own Cryptocurrencies
+
+Research:
+Elliptic Curve Digital Signature Algorithm
+Mathematic Trap Door
+
+
+
+
+
+HL -> Solution Framework is modular, one consensus model and one security model would not be enough to satisfy all the use cases (outside currency). Big customers are concerned with who's participating in the network, and so identity becomes key.
+Chaincode - Conceptualize really computationally expensive work and incorporate that back into Blockchain
+Deficiency - Integration with UTXL model, which is BitCoin model which was designed with specific purpose in mind. Without Smart Contract applications that can be employed in private enterprised environment, HL will be relatively limited.
+HL is a permissioned environment
+Openly Governed Model
+Focuses on High Transaction Throughput, Finality, Identity, Non Forking, Private - Confidential Agreements
+
+Vision: HLTP (Hyperledger Transaction Protocol)
+
+ETH -> Pluggable consensus formation algorithm.
+Smart Contracts run native to the Blockchain, so need to refrain from running expensive work.
+ETH focuses on public Blockchain network - micropayments to third world countries
+Open Source but not Open Governance
+
+Find Answers to the following questions:
+=======================================
+1. How to start with Hyperledger? How to install and where to install?
+2. Once installed what are the various components involved? What do we actually code?
+3. What language do we code in?
+4. How to set up a private network for Hyperledger Blockchain?
+5. How to write Chaincode?
+6. How to use GitHub and what is my login?
+7. How does SHA256 work?
+
+Exercises:
+============
+1. Get a SHA256 Hash of a given string using a language
+
+
+
+Vagrant
+
+07 Apr 2017
+======================================================
+Secure Shell (SSH)
+===========================
+
+SSH, also known as Secure Socket Shell, is a network protocol that provides administrators with a secure way to access a remote computer. SSH also refers to the suite of utilities that implement the protocol. Secure Shell provides strong authentication and secure encrypted data communications between two computers connecting over an insecure network such as the Internet. SSH is widely used by network administrators for managing systems and applications remotely, allowing them to log in to another computer over a network, execute commands and move files from one computer to another.
+
+
+Daemon
+==============
+In multitasking computer operating systems, a daemon is a computer program that runs as a background process, rather than being under the direct control of an interactive user. Traditionally, the process names of a daemon end with the letter d, for clarification that the process is, in fact, a daemon, and for differentiation between a daemon and a normal computer program. For example, syslogd is the daemon that implements the system logging facility, and sshd is a daemon that serves incoming SSH connections.
+
+Docker
+================
+Runs on Linux
+Use Boot2Docker.io to run Docker on Windows. Basically creates a light weight vitual machine.
+
+
+
+https://www.youtube.com/watch?v=Lx9zgZCMqXE
+https://www.youtube.com/watch?v=2Zp37zarSQc
+https://www.youtube.com/watch?v=kMktpqo0FH8
+https://www.altoros.com/blog/hyperledger-vs-ethereum-yes-no-maybe/?utm_source=youtube_channel&utm_medium=organic&utm_campaign=youtube 
+https://blockgeeks.com/guides/what-is-blockchain-technology/
+http://blogs.wsj.com/cio/2016/02/02/cio-explainer-what-is-blockchain/ 
+https://azure.microsoft.com/en-in/blog/bletchley-blockchain/
+https://hyperledger-fabric.readthedocs.io/en/latest/getting_started.html#prerequisites
+https://www.strategy-business.com/article/A-Strategists-Guide-to-Blockchain?gko=0d586
+
+DAM
+=====
+http://digitalassetmanagementnews.org/features/digital-assets-from-iot-to-blockchain-will-become-everyones-business/
+https://digitalasset.com/
+https://melonport.com/
+http://www.coindesk.com/digital-asset-targets-biggest-big-banks-new-blockchain-tech/
+
+Docker, Vagrant
+========
+https://www.youtube.com/watch?v=YFl2mCHdv24
+https://www.youtube.com/watch?v=K6WER0oI-qs#t=242.044895
+https://www.youtube.com/watch?annotation_id=annotation_3019721629&feature=iv&index=10&list=PLoYCgNOIyGAB0_YBfdNP5oqAD98HtAQqL&src_vid=pGYAg7TMmp0&v=PmOMc4zfCSw
+
+
+GitHub
+========
+https://github.com/
+https://guides.github.com/activities/hello-world/
+https://www.youtube.com/githubguides
+
+
+https://www.fastcompany.com/3042665/six-habits-of-confident-people
+https://www.fastcompany.com/3063608/the-resilience-strategy-i-taught-hundreds-of-army-drill-sergeants 
+https://www.fastcompany.com/3036538/how-to-be-a-success-at-everything/the-risk-adversed-persons-guide-to-taking-a-chance 
+https://www.fastcompany.com/3068725/this-is-the-mind-set-youll-need-to-thrive-in-the-future-of-work
